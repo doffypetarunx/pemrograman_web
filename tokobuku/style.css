@@ -1,0 +1,294 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+header {
+  background: #35424a;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #35424a;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo-text span {
+  color: #ff00c8;
+}
+
+#toggle-theme {
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 26px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#search-bar,
+#filter-price,
+#sort-books {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.book {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+}
+
+.book-image {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.book h3 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.book p {
+  color: #666;
+  font-size: 14px;
+}
+
+button {
+  background: #45a049;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #3e8e41;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+#cart {
+  margin-top: 50px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#cart-items {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+#cart-items li {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#cart-total {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode header {
+  background: #1f1f1f;
+}
+
+body.dark-mode .book,
+body.dark-mode #cart {
+  background: #1e1e1e;
+  border-color: #333;
+  color: #ddd;
+}
+
+body.dark-mode #search-bar,
+body.dark-mode #filter-price,
+body.dark-mode #sort-books {
+  background: #2b2b2b;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark-mode button {
+  background: #ec65d6;
+}
+
+body.dark-mode button:hover {
+  background: #dd08a8;
+}
+
+body.dark-mode .delete-btn {
+  background: #c62828;
+}
+
+body.dark-mode .delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* Alert */
+.alert {
+  background: #45a049;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeOut 3s ease forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .logo-wrapper {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  #search-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #search-bar,
+  #filter-price,
+  #sort-books {
+    width: 100%;
+  }
+
+  .book {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #cart-total {
+    text-align: left;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doffy Store</title>
+    <style>
+        /* Reset+dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header teks+Logo */
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            background-color: #1c1c25;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo-img {
+            width: 60px;
+            height: 60px;
+        }
+        .logo-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffff00;
+            text-align: center;
+        }
+        .logo-text span {
+            color: #ff00aa;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #ffffff;
+            border-top: 2px solid #ccc;
+            border-bottom: 2px solid #ccc;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 12px 32px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        nav li a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        nav li a:hover {
+            color: #ff00aa;
+        }
+
+        /* Responsif  */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body id="home">
+
+    <!-- Header Section -->
+    <header class="logo-wrapper">
+        <div class="logo-img">
+            <img src="images/logo toko buku.png" alt="Logo Doffy Store">
+        </div>
+        <div class="logo-text">Doffy<span>Store</span></div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="daftarbuku.html">Buku</a></li>
+            <li><a href="daftarmajalah.html">Majalah</a></li>
+            <li><a href="daftarkoran.html">Koran</a></li>
+        </ul>
+    </nav>
+
+        <!-- Daftar Buku -->
+<section style="padding: 32px; background-color: #fff;">
+    <h2 style="font-size: 24px; margin-bottom: 16px;">Daftar Buku</h2>
+    <div style="display: flex; gap: 16px; overflow-x: auto;">
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f9f9f9; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/buku1.jpeg" alt="Tokyo Study" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">Briliant</h3>
+            <p style="font-size: 14px; color: #555;">Ahmad Labib</p>
+        </div>
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f9f9f9; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/buku2.jpeg" alt="Open Hour" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">Lost at Sea</h3>
+            <p style="font-size: 14px; color: #555;">Andika Abdillah</p>
+        </div>
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f9f9f9; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/buku3.jpeg" alt="Fruit Drink" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">The Forecast Killer</h3>
+            <p style="font-size: 14px; color: #555;">Aji Banyu</p>
+        </div>
+        </div>
+</section>
+
+        <!-- Daftar Majalah -->
+<section style="padding: 32px; background-color: #fff;">
+    <h2 style="font-size: 24px; margin-bottom: 16px;">Daftar Majalah</h2>
+    <div style="display: flex; gap: 16px; overflow-x: auto;">
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f0f0ff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/majalah1.jpeg" alt="TechToday" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">Fashion School</h3>
+            <p style="font-size: 14px; color: #555;">Edisi April</p>
+        </div>
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f0f0ff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/majalah2.jpeg" alt="StyleMag" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">Babby Puppy</h3>
+            <p style="font-size: 14px; color: #555;">Edisi Maret</p>
+        </div>
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f0f0ff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/majalah3.jpeg" alt="TechToday" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">Clash</h3>
+            <p style="font-size: 14px; color: #555;">Edisi Mei</p>
+        </div>
+    </div>
+</section>
+
+<!-- Daftar Koran -->
+<section style="padding: 32px; background-color: #fff;">
+    <h2 style="font-size: 24px; margin-bottom: 16px;">Daftar Koran</h2>
+    <div style="display: flex; gap: 16px; overflow-x: auto;">
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f0f0ff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/koran1.jpeg" alt="Harian Pagi" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">Berita Pagi</h3>
+            <p style="font-size: 14px; color: #555;">01 Mei 2025</p>
+        </div>
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f0f0ff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/koran2.jpeg" alt="Berita Kita" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">Berita Siang</h3>
+            <p style="font-size: 14px; color: #555;">01 Mei 2025</p>
+        </div>
+
+        <div style="flex: 0 0 auto; width: 200px; background: #f0f0ff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+            <img src="images/koran3.jpeg" alt="Berita Kita" style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+            <h3 style="font-size: 18px; margin: 12px 0 4px;">Berita Malam</h3>
+            <p style="font-size: 14px; color: #555;">01 Mei 2025</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+<!--Alhamdulillah-->
