@@ -1,0 +1,190 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+/* Topbar Login & Regis */
+.top-bar {
+  background-color: #ff00b3;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+.auth-buttons .btn {
+  color: white;
+  background-color: #000000;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.auth-buttons .btn-login {
+  background-color: #00a2ff;
+}
+
+.auth-buttons .btn:hover {
+  background-color: #007bb5;
+}
+
+/* Logo */
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img img {
+  width: 60px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00a2ff;
+  text-align: center;
+}
+
+.logo-text span {
+  color: #ff00b3;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff00b3;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu {
+  list-style-type: none;
+  display: inline-flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+/* Dropdown Utama */
+.dropdownbuku-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  border-radius: 8px;
+}
+
+.dropdownbuku:hover .dropdownbuku-content {
+  display: block;
+}
+
+.dropdownbuku-content li a {
+  color: #000000;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+/*  Drowdown Submenu */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-content {
+  display: block;
+}
+
+.dropdown-submenu-content li a {
+  color: #000;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+/* Best Seller */
+.best-seller {
+  padding: 40px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.best-seller h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.book-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.book-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+  font-size: 14px;
+  text-align: center;
+}

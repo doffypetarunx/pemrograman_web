@@ -3,7 +3,7 @@ const books = [
   { name: "Bangunan Bersejarah", author: "Andika Abdillah", price: 70000, image: "images/b.jpg" },
   { name: "Kota Lama", author: "Fatih Sultan Albani", price: 40000, image: "images/c.jpg" },
   { name: "Hitam Putih", author: "Angel Maharani", price: 50000, image: "images/d.jpg" },
-  { name: "Kehidupan Malam Hari", author: "Ahmad Labib Riski", price: 100000, image: "images/e.jpg" },
+  { name: "Kehidupan Malam", author: "Ahmad Labib Riski", price: 100000, image: "images/e.jpg" },
   { name: "Cuaca Mendukung", author: "Nadia Patricia", price: 150000, image: "images/f.jpg" },
   { name: "Monumen Bersejarah", author: "Imam Ahmad", price: 700000, image: "images/g.jpg" },
   { name: "Makhluk Dunia Lain", author: "Syafii Nur Adha", price: 1000000, image: "images/h.jpg" },
