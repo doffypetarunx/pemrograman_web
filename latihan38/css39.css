@@ -14,6 +14,11 @@ ul {
   background-color: #ff00b3;
   padding: 10px 20px;
   text-align: right;
+  height: 55px;
+}
+
+.auth-buttons {
+  display: inline-flex;
 }
 
 .auth-buttons .btn {
