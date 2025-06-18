@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 1200px; /* Lebih besar dari sebelumnya */
+  max-width: 1200px; 
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ body {
   background-color: white;
   display: flex;
   flex-direction: row;
-  padding: 30px; /* Diperbesar */
+  padding: 30px; 
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s;
@@ -45,7 +45,7 @@ body {
 }
 
 .hasil-novel-card img {
-  width: 220px; /* Diperbesar dari 150px */
+  width: 220px; 
   height: auto;
   border-radius: 10px;
   object-fit: cover;
@@ -57,13 +57,13 @@ body {
 
 .card-content h3 {
   margin-top: 0;
-  font-size: 24px; /* Diperbesar */
+  font-size: 24px; 
   color: #222;
 }
 
 .card-content p {
   margin: 8px 0;
-  font-size: 16px; /* Diperbesar */
+  font-size: 16px; 
   color: #555;
 }
 
